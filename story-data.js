@@ -32,7 +32,7 @@ const STORY = {
           "I used to think home was a place. Now I think it's a feeling that returns to you the moment your feet touch familiar ground, before your mind has even caught up.",
           "Home is humidity on an airport walkway. A language changing mid-sentence at the dinner table. A version of me that never has to explain herself."
         ],
-        video: { label: "A moment from the Corniche" }
+        video: { label: "A moment from the Corniche", type: "video", src: "media/auh-home-3.mp4" }
       },
       {
         id: "passion",
@@ -45,7 +45,7 @@ const STORY = {
           "It culminated in my Arangetram, but the real gift wasn't the performance. It was learning that passion isn't a feeling you wait to arrive — it's a practice you show up for, especially on the days it doesn't feel like magic.",
           "That's the lens I bring to everything else now, whether it's a codebase or a competition: show up, repeat it until it's right, and let the discipline become the thing people mistake for talent."
         ],
-        video: { label: "Arangetram, and the years of dance before it" }
+        video: { label: "Arangetram, and the years of dance before it", type: "video", src: "media/dance-2.mp4" }
       },
       {
         id: "character",
@@ -58,7 +58,7 @@ const STORY = {
           "Character, to me, doesn't mean being agreeable or fitting into every room. I have strong beliefs, and I'm comfortable standing by them even when they aren't the popular ones. I'd rather be genuine and stand apart than shrink myself to belong.",
           "A family that let me be strong-willed, and eventually the nerve to move across the world for something I wanted, taught me the same lesson twice: discipline means very little if you don't know what you're working toward."
         ],
-        video: { label: "Growing up in Abu Dhabi" }
+        video: { label: "Growing up in Abu Dhabi", type: "image", src: "media/character.jpg" }
       },
       {
         id: "academics",
@@ -144,7 +144,7 @@ const STORY = {
         "I didn't pick that group of people. I inherited them. And if I had the choice all over again, I'd pick them right back.",
         "Home doesn't always stay in one city. Sometimes it just spreads a little further down the coast."
       ],
-      video: { label: "Weekends in Dubai, the Dabhol group" }
+      video: { label: "Weekends in Dubai, the Dabhol group", type: "video", src: "media/dubai-video.mp4" }
     }
   },
 

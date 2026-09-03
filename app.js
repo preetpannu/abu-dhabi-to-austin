@@ -98,12 +98,16 @@
         </div>
       `;
     } else if(pin.video){
+      const mediaHTML = pin.video.src
+        ? (pin.video.type === 'image'
+            ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
+            : `<video class="vs-media" src="${pin.video.src}" controls playsinline preload="metadata"></video>`)
+        : `${videoIconSVG()}<div class="vs-label">${pin.video.label}</div>`;
       innerHTML = `
         <div class="modal-body-grid">
           <div class="modal-text">${bodyHTML}</div>
-          <div class="video-slot">
-            ${videoIconSVG()}
-            <div class="vs-label">${pin.video.label}</div>
+          <div class="video-slot${pin.video.src ? ' has-media' : ''}">
+            ${mediaHTML}
           </div>
         </div>
       `;
@@ -158,7 +162,7 @@
 
   const worldPin = L.marker([STORY.world.uae.lat, STORY.world.uae.lng], { icon: pinIcon() })
     .addTo(worldMap)
-    .bindTooltip('Visit me!', { permanent: true, direction: 'top', offset: [0, -34], className: 'visit-tooltip' })
+    .bindTooltip('Visit me!', { permanent: true, direction: 'bottom', offset: [0, 12], className: 'visit-tooltip' })
     .openTooltip();
 
   worldPin.on('click', () => {
