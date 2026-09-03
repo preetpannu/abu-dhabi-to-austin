@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preet Pannu — Still Exploring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= WORLD ================= -->
+<section class="scene active" id="scene-world">
+  <div id="world-map"></div>
+</section>
+
+<!-- ================= ABU DHABI / DUBAI / GURGAON (shared map region) ================= -->
+<section class="scene mapscene" id="scene-region-a">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="region-grid">
+    <div class="map-col">
+      <div id="map-a" class="map-el"></div>
+      <div class="map-caption" id="map-a-caption">ABU DHABI</div>
+    </div>
+    <div class="text-col" id="region-a-text">
+      <!-- injected per sub-view by app.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPARTURES ================= -->
+<section class="scene" id="scene-departures">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="center-stack">
+    <div class="eyebrow">The Decision</div>
+    <h1 class="headline">I spent most of my life thinking I would never leave home.</h1>
+    <p class="lede">Then I did.</p>
+
+    <div class="board-wrap">
+      <div class="board-title">DEPARTURES</div>
+      <div id="board-rows"></div>
+    </div>
+
+    <button class="continue-btn" id="claim-pass-btn" style="margin-top:2.4rem;">Claim my boarding pass
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ================= BOARDING PASS ================= -->
+<section class="scene" id="scene-boardingpass">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="center-stack" style="justify-content:center;">
+    <div class="eyebrow" style="text-align:center; width:100%;">Boarding Pass</div>
+    <div class="boardingpass" id="boardingpass-card">
+      <!-- injected by app.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLIGHT ================= -->
+<section class="scene" id="scene-flight">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="clouds" id="clouds"></div>
+  <div class="flight-center">
+    <p class="flight-line" id="fl1">I packed up my entire life and started from scratch.</p>
+    <button class="continue-btn" id="land-austin-btn" style="display:none; margin-top:2.2rem;">Land in Austin
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ================= AUSTIN (region B) ================= -->
+<section class="scene mapscene" id="scene-austin">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="region-grid">
+    <div class="map-col">
+      <div id="map-b" class="map-el"></div>
+      <div class="map-caption" id="map-b-caption">AUSTIN, TEXAS</div>
+    </div>
+    <div class="text-col">
+      <div class="chapter-loc" style="font-size:.7rem; letter-spacing:.2em; color:var(--muted); margin-bottom:1.2rem;">JFK → TEXAS → AUSTIN</div>
+      <p class="eyebrow">August 2025</p>
+      <h1 class="headline">I had never been to Texas before. I knew no one.</h1>
+      <div class="stack">
+        <p style="font-family:var(--serif); font-style:italic; color:var(--gold-bright);">But I came anyway.</p>
+      </div>
+      <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pins to visit my pillars</div>
+      <p class="journey-note" id="austin-closing" style="display:none;">Maybe you too could be a pin in my world.</p>
+      <button class="continue-btn" id="austin-continue-btn" style="display:none;">Continue
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <button class="continue-btn secondary" id="austin-end-btn" style="margin-top:1.2rem;">End my journey here →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL ================= -->
+<section class="scene" id="scene-final">
+  <button class="back-btn" data-back>‹ Back</button>
+  <div class="final-center">
+    <p class="final-line">Maybe you too could be a pin in my world.</p>
+    <div class="brand">PREET PANNU</div>
+    <div class="sub">Still exploring.</div>
+    <div class="motto">Live intentionally.</div>
+  </div>
+</section>
+
+<!-- ================= PILLAR MODAL ================= -->
+<div id="pillar-modal">
+  <div class="modal-card" id="modal-card">
+    <!-- injected by app.js -->
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="story-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
