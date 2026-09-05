@@ -70,7 +70,7 @@ const STORY = {
           "That was also around when I first fell for computer science: the way a problem could have a hundred wrong approaches and still one elegant answer waiting underneath. It felt like the same kind of discipline dance had already taught me, just in a new language.",
           "School taught me that ambition isn't loud, it's just persistent. My Grade 11 and 12 classmates taught me the rest: that the people beside you during the hardest stretch of your life become part of your permanent architecture, whether you meant for them to or not."
         ],
-        video: { label: "School, Talent Day, graduation" }
+        video: { label: "School, Talent Day, graduation", type: "video", src: "media/academics-auh.mp4" }
       },
       {
         id: "friendship",
@@ -82,7 +82,7 @@ const STORY = {
           "I grew up alongside the same group of people from school — through every recital, every exam season, every version of myself I tried on and outgrew. They watched me become who I am because they were there for all the drafts, not just the final one.",
           "There's something no new friendship can replicate: the shorthand, the inside jokes with no origin story because you were both there when it started, the certainty that someone has known you long enough to call you out and love you anyway."
         ],
-        video: { label: "School friends, over the years" }
+        video: { label: "School friends, over the years", type: "video", src: "media/friends-huh.mp4" }
       },
       {
         id: "service",
@@ -115,7 +115,7 @@ const STORY = {
           "I learned that the things we build can either make someone's life quietly easier, or completely miss what they needed in the first place.",
           "I carry that lesson everywhere now, including into every line of code I write."
         ],
-        video: { label: "Volunteering in Gurgaon" }
+        video: { label: "Volunteering in Gurgaon", type: "video", src: "media/india-volunteering.mp4" }
       },
       {
         id: "roots",
@@ -126,7 +126,7 @@ const STORY = {
           "Before I was from Abu Dhabi, I was from somewhere else entirely — a language, a cuisine, a way of celebrating that lives in me even though I've never lived here full-time.",
           "My roots aren't a place I visit. They're a place I carry, folded into the way I dance, the food I crave when I'm homesick, the festivals I still light up for even eight thousand miles away."
         ],
-        video: { label: "Moments of my culture" }
+        video: { label: "Moments of my culture", type: "video", src: "media/india-roots.mp4" }
       }
     ]
   },
@@ -194,7 +194,7 @@ const STORY = {
           "I chose Computer Science and Linguistics at UT Austin because I wanted the harder, stranger intersection — language, people, and machines all trying to understand each other.",
           "I came here ready for a challenge. I came here to be impossible to overlook."
         ],
-        video: { label: "UT Austin, CS life" }
+        video: { label: "UT Austin, CS life", type: "video", src: "media/utcs.mp4" }
       },
       {
         id: "service-austin",
@@ -206,7 +206,7 @@ const STORY = {
           "Through Women in Computer Science and the UTCS Roadshow, I get to hand a robotics kit to some kid who's never seen one before and watch their face do that thing — that flicker of 'oh, I could do this too.'",
           "That flicker is the whole point."
         ],
-        video: { label: "Teaching robotics in Austin" }
+        video: { label: "Teaching robotics in Austin", type: "image", src: "media/ut-volunteer.jpg" }
       },
       {
         id: "ambition",
@@ -218,7 +218,7 @@ const STORY = {
           "I want to build a life that touches people, contributes something meaningful, and leaves every place I've been a little better than I found it. Even if the impact is small, I want it to be on purpose.",
           "When I picture myself at thirty, I'm not picturing a job title. I'm picturing someone who built things that mattered, loved people well, and never let comfort talk her out of something worth doing."
         ],
-        video: { label: "What I'm building" }
+        video: { label: "What I'm building", type: "image", src: "media/ambition.jpg" }
       },
       {
         id: "friendship-austin",
@@ -230,7 +230,7 @@ const STORY = {
           "I'm scared of being perceived — I'll admit that outright. But Austin has slowly taught me that you can't build a life while waiting to feel completely comfortable first.",
           "I've found some people here. Not all of them yet. But some."
         ],
-        video: { label: "New friends, first year" }
+        video: { label: "New friends, first year", type: "video", src: "media/friends-ut.mp4" }
       },
       {
         id: "home-austin",
@@ -242,7 +242,7 @@ const STORY = {
           "Maybe home isn't a place you replace — it's a feeling you slowly build a second version of, somewhere else, out of new mornings and new people and enough repetition that one day a street corner just feels familiar without you noticing when it happened.",
           "I'm still building that here. I'm not there yet. But I'm building it anyway."
         ],
-        video: { label: "Austin, day to day" }
+        video: { label: "Austin, day to day", type: "video", src: "media/ut-home.mp4" }
       }
     ]
   }
