@@ -17,9 +17,9 @@
     });
   }
 
-  function pinIcon(){
+  function pinIcon(rippled){
     return L.divIcon({
-      className: 'map-pin pulse',
+      className: 'map-pin pulse' + (rippled ? ' ripple' : ''),
       html: `<svg width="30" height="40" viewBox="0 0 24 32">
         <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 20 12 20s12-11 12-20c0-6.6-5.4-12-12-12z" fill="#d3a35a" stroke="#0c1322" stroke-width="1"/>
         <circle class="pin-core" cx="12" cy="12" r="5" fill="#0c1322"/>
@@ -201,7 +201,7 @@
   });
   tileLayer().addTo(worldMap);
 
-  const worldPin = L.marker([STORY.world.uae.lat, STORY.world.uae.lng], { icon: pinIcon() })
+  const worldPin = L.marker([STORY.world.uae.lat, STORY.world.uae.lng], { icon: pinIcon(true) })
     .addTo(worldMap)
     .bindTooltip('Visit me!', { permanent: true, direction: 'bottom', offset: [0, 12], className: 'visit-tooltip' })
     .openTooltip();
