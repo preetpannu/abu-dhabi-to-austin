@@ -84,41 +84,72 @@
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 9l5-3v12l-5-3"/></svg>';
   }
 
+  function pinIconSVGSmall(){
+    return '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>';
+  }
+
   function openModal(pin, onLink){
     const bodyHTML = pin.body.map(p => `<p>${p}</p>`).join('');
 
     let innerHTML = '';
+    let isPostcard = false;
+
     if(pin.linksTo){
       innerHTML = `
         <div class="modal-body-grid single-col">
+          <div class="pillar-tag">— ${pin.pillar} —</div>
+          <h3>${pin.title}</h3>
           <div class="modal-text">
             ${bodyHTML}
             <button class="modal-cta" id="modal-link-btn">${pin.cta || 'Continue →'}</button>
           </div>
         </div>
       `;
+    } else if(pin.video && pin.video.src){
+      isPostcard = true;
+      const mediaHTML = pin.video.type === 'image'
+        ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
+        : `<video class="vs-media" src="${pin.video.src}" controls playsinline autoplay preload="auto"></video>`;
+      innerHTML = `
+        <div class="postcard-grid">
+          <div class="postcard-media">
+            ${mediaHTML}
+            ${pin.location ? `<div class="postcard-location">${pinIconSVGSmall()}<span>${pin.location}</span></div>` : ''}
+          </div>
+          <div class="postcard-text">
+            <div class="pillar-tag">— ${pin.pillar} —</div>
+            <h3>${pin.title}</h3>
+            <div class="modal-text">${bodyHTML}</div>
+          </div>
+        </div>
+      `;
     } else if(pin.video){
-      const mediaHTML = pin.video.src
-        ? (pin.video.type === 'image'
-            ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
-            : `<video class="vs-media" src="${pin.video.src}" controls playsinline autoplay preload="auto"></video>`)
-        : `${videoIconSVG()}<div class="vs-label">${pin.video.label}</div>`;
       innerHTML = `
         <div class="modal-body-grid">
-          <div class="modal-text">${bodyHTML}</div>
-          <div class="video-slot${pin.video.src ? ' has-media' : ''}">
-            ${mediaHTML}
+          <div>
+            <div class="pillar-tag">— ${pin.pillar} —</div>
+            <h3>${pin.title}</h3>
+            <div class="modal-text">${bodyHTML}</div>
+          </div>
+          <div class="video-slot">
+            ${videoIconSVG()}
+            <div class="vs-label">${pin.video.label}</div>
           </div>
         </div>
       `;
     } else {
-      innerHTML = `<div class="modal-body-grid single-col"><div class="modal-text">${bodyHTML}</div></div>`;
+      innerHTML = `
+        <div class="modal-body-grid single-col">
+          <div class="pillar-tag">— ${pin.pillar} —</div>
+          <h3>${pin.title}</h3>
+          <div class="modal-text">${bodyHTML}</div>
+        </div>
+      `;
     }
 
+    modalCard.classList.toggle('is-postcard', isPostcard);
     modalCard.innerHTML = `
       <button class="modal-close" id="modal-close-btn" aria-label="Close">&times;</button>
-      <div class="pillar-tag">— ${pin.pillar} —</div>
-      <h3>${pin.title}</h3>
       ${innerHTML}
     `;
     modalEl.classList.add('open');
@@ -241,6 +272,8 @@
       <div class="stack">
         <p>I was born and raised here. Every pin below is an answer to something I believe in.</p>
       </div>
+      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
+      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pins to visit my pillars</div>
       <button class="continue-btn" id="to-dubai-btn">Continue the journey → Dubai
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -256,6 +289,8 @@
       <div class="stack">
         <p>Two pins here: the volunteering that changed how I think about building things, and the roots I still carry no matter how far I go.</p>
       </div>
+      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
+      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pins to visit my pillars</div>
       <button class="continue-btn secondary" id="fly-home-btn">‹ Fly back to Abu Dhabi
       </button>
@@ -270,6 +305,8 @@
       <div class="stack">
         <p>This pin continues the Home and Friendship pillars from Abu Dhabi — including the Dabhol group story — just a little further up the coast.</p>
       </div>
+      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
+      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pin to visit my pillars</div>
       <button class="continue-btn" id="to-departures-btn">Continue the journey → Departures
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

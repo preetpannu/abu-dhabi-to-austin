@@ -27,6 +27,7 @@ const STORY = {
         lat: 24.4764, lng: 54.3352,
         pillar: "Home",
         title: "Home is a feeling, not a zip code.",
+        location: "The Corniche, Abu Dhabi",
         body: [
           "My feet know I'm home before my brain catches up — usually somewhere around the humidity on the airport walkway.",
           "Home is Corniche sunsets, a language that switches mid-sentence at dinner, and never having to explain myself."
@@ -38,6 +39,7 @@ const STORY = {
         lat: 24.4696, lng: 54.3900,
         pillar: "Passion",
         title: "9 years of Bharatanatyam. Zero regrets.",
+        location: "Al Zahiyah, Abu Dhabi",
         body: [
           "I've performed a full Arangetram — hours of dance memorized down to the eyebrow flick.",
           "Dance taught me discipline before school did: show up, repeat it a hundred times, make it look effortless."
@@ -49,6 +51,7 @@ const STORY = {
         lat: 24.4915, lng: 54.3703,
         pillar: "Character",
         title: "My motto: live intentionally.",
+        location: "Al Khalidiyah, Abu Dhabi",
         body: [
           "I have strong opinions and zero interest in hiding them just to fit in.",
           "Nine years of dance plus one very stubborn family equals someone who picks purpose over popularity, every time."
@@ -60,6 +63,7 @@ const STORY = {
         lat: 24.4360, lng: 54.4520,
         pillar: "Academics",
         title: "60 students, 4 AP exams, 1 Talent Day.",
+        location: "Al Maryah Island, Abu Dhabi",
         body: [
           "I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
           "Turns out debugging code and debugging a talent show use the exact same muscle."
@@ -71,6 +75,7 @@ const STORY = {
         lat: 24.4103, lng: 54.5622,
         pillar: "Friendship",
         title: "Some of my friends predate my memory.",
+        location: "Al Reem Island, Abu Dhabi",
         body: [
           "I've known some friends since before I can remember — every recital, every exam, every awkward phase, fully witnessed.",
           "No new friendship replicates an inside joke with no origin story."
@@ -82,6 +87,7 @@ const STORY = {
         lat: 24.5150, lng: 54.4950,
         pillar: "Service",
         title: "This pin flies further than Abu Dhabi.",
+        location: "Al Bahia, Abu Dhabi",
         linksTo: "gurgaon",
         body: [
           "My ambition has a passport. It doesn't stop at my own doorstep.",
@@ -102,6 +108,7 @@ const STORY = {
         lat: 28.4595, lng: 77.0266,
         pillar: "Service",
         title: "Paying attention, on purpose.",
+        location: "Sector 29, Gurgaon",
         body: [
           "Volunteering here taught me the people I help are never abstract — they have names and mornings.",
           "That lesson now lives in every line of code I write."
@@ -113,6 +120,7 @@ const STORY = {
         lat: 28.4400, lng: 77.0650,
         pillar: "Roots",
         title: "The place I carry, not visit.",
+        location: "DLF Phase 3, Gurgaon",
         body: [
           "I've never lived here full-time, but the food, the festivals, and the dance moves are 100% mine.",
           "Roots don't need a residency."
@@ -129,6 +137,7 @@ const STORY = {
       lat: 25.1972, lng: 55.2744,
       pillar: "Home Away From Home",
       title: "An hour up a road I could drive blind.",
+      location: "Dubai Marina, Dubai",
       body: [
         "This is where the Dabhol group story lives — two dads, one 1990s power plant project, and kids who never got a say in becoming close.",
         "Home just spread a little further down the coast."
@@ -178,6 +187,7 @@ const STORY = {
         lat: 30.2849, lng: -97.7341,
         pillar: "Academics",
         title: "I didn't come here to blend in.",
+        location: "UT Austin Campus, Austin",
         body: [
           "I'm studying CS + Linguistics — why pick between machines and people when you can study them talking past each other?",
           "Impossible to overlook was always the plan."
@@ -189,6 +199,7 @@ const STORY = {
         lat: 30.3078, lng: -97.7433,
         pillar: "Service",
         title: "It followed me 8,000 miles.",
+        location: "Gates Dell Complex, Austin",
         body: [
           "I teach robotics through Women in CS and the UTCS Roadshow — handing a kid their first kit never gets old.",
           "That flicker of 'I could do this too' is the whole point."
@@ -200,6 +211,7 @@ const STORY = {
         lat: 30.2711, lng: -97.7437,
         pillar: "Ambition",
         title: "Ambition, lived intentionally.",
+        location: "Downtown Austin, Austin",
         body: [
           "I don't measure my life in job titles. I measure it in whether I made something a little better, on purpose.",
           "At thirty, I want to be memorable for what I built, not what I was called."
@@ -211,6 +223,7 @@ const STORY = {
         lat: 30.2586, lng: -97.7387,
         pillar: "Friendship",
         title: "Found some. Still counting.",
+        location: "West Campus, Austin",
         body: [
           "I knew zero people when I landed in Austin.",
           "I'm scared of being perceived — and I walked into rooms alone anyway. Found some people. Not all of them yet. But some."
@@ -222,6 +235,7 @@ const STORY = {
         lat: 30.2650, lng: -97.7420,
         pillar: "Home — still looking",
         title: "Building a second home, on purpose.",
+        location: "South Congress, Austin",
         body: [
           "Austin isn't home yet — but I'm collecting the mornings and street corners that might make it one.",
           "Not there yet. Building it anyway."
