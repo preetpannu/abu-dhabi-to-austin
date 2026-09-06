@@ -101,7 +101,7 @@
       const mediaHTML = pin.video.src
         ? (pin.video.type === 'image'
             ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
-            : `<video class="vs-media" src="${pin.video.src}" controls playsinline preload="metadata"></video>`)
+            : `<video class="vs-media" src="${pin.video.src}" controls playsinline autoplay preload="auto"></video>`)
         : `${videoIconSVG()}<div class="vs-label">${pin.video.label}</div>`;
       innerHTML = `
         <div class="modal-body-grid">
@@ -123,6 +123,14 @@
     `;
     modalEl.classList.add('open');
 
+    const modalVideo = modalCard.querySelector('.vs-media[autoplay]');
+    if(modalVideo){
+      modalVideo.play().catch(() => {
+        modalVideo.muted = true;
+        modalVideo.play().catch(() => {});
+      });
+    }
+
     document.getElementById('modal-close-btn').addEventListener('click', closeModal);
     if(pin.linksTo){
       document.getElementById('modal-link-btn').addEventListener('click', () => {
@@ -134,6 +142,8 @@
 
   function closeModal(){
     modalEl.classList.remove('open');
+    const playingVideo = modalCard.querySelector('video.vs-media');
+    if(playingVideo) playingVideo.pause();
   }
 
   modalEl.addEventListener('click', (e) => {
