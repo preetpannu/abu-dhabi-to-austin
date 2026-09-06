@@ -28,7 +28,7 @@ const STORY = {
         pillar: "Home",
         title: "Home is a feeling, not a zip code.",
         body: [
-          "Fun fact: my feet know I'm home before my brain catches up — usually somewhere around the humidity on the airport walkway.",
+          "My feet know I'm home before my brain catches up — usually somewhere around the humidity on the airport walkway.",
           "Home is Corniche sunsets, a language that switches mid-sentence at dinner, and never having to explain myself."
         ],
         video: { label: "A moment from the Corniche", type: "video", src: "media/auh-home-3.mp4" }
@@ -39,7 +39,7 @@ const STORY = {
         pillar: "Passion",
         title: "9 years of Bharatanatyam. Zero regrets.",
         body: [
-          "Fun fact: I've performed a full Arangetram — hours of dance memorized down to the eyebrow flick.",
+          "I've performed a full Arangetram — hours of dance memorized down to the eyebrow flick.",
           "Dance taught me discipline before school did: show up, repeat it a hundred times, make it look effortless."
         ],
         video: { label: "Arangetram, and the years of dance before it", type: "video", src: "media/dance-2.mp4" }
@@ -50,7 +50,7 @@ const STORY = {
         pillar: "Character",
         title: "My motto: live intentionally.",
         body: [
-          "Fun fact: I have strong opinions and zero interest in hiding them just to fit in.",
+          "I have strong opinions and zero interest in hiding them just to fit in.",
           "Nine years of dance plus one very stubborn family equals someone who picks purpose over popularity, every time."
         ],
         video: { label: "Growing up in Abu Dhabi", type: "image", src: "media/character.jpg" }
@@ -61,7 +61,7 @@ const STORY = {
         pillar: "Academics",
         title: "60 students, 4 AP exams, 1 Talent Day.",
         body: [
-          "Fun fact: I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
+          "I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
           "Turns out debugging code and debugging a talent show use the exact same muscle."
         ],
         video: { label: "School, Talent Day, graduation", type: "video", src: "media/academics-auh.mp4" }
@@ -72,7 +72,7 @@ const STORY = {
         pillar: "Friendship",
         title: "Some of my friends predate my memory.",
         body: [
-          "Fun fact: I've known some friends since before I can remember — every recital, every exam, every awkward phase, fully witnessed.",
+          "I've known some friends since before I can remember — every recital, every exam, every awkward phase, fully witnessed.",
           "No new friendship replicates an inside joke with no origin story."
         ],
         video: { label: "School friends, over the years", type: "video", src: "media/friends-huh.mp4" }
@@ -84,7 +84,7 @@ const STORY = {
         title: "This pin flies further than Abu Dhabi.",
         linksTo: "gurgaon",
         body: [
-          "Fun fact: my ambition has a passport. It doesn't stop at my own doorstep.",
+          "My ambition has a passport. It doesn't stop at my own doorstep.",
           "Follow this pin to where that lesson actually started."
         ],
         video: null,
@@ -103,7 +103,7 @@ const STORY = {
         pillar: "Service",
         title: "Paying attention, on purpose.",
         body: [
-          "Fun fact: volunteering here taught me the people I help are never abstract — they have names and mornings.",
+          "Volunteering here taught me the people I help are never abstract — they have names and mornings.",
           "That lesson now lives in every line of code I write."
         ],
         video: { label: "Volunteering in Gurgaon", type: "video", src: "media/india-volunteering.mp4" }
@@ -114,7 +114,7 @@ const STORY = {
         pillar: "Roots",
         title: "The place I carry, not visit.",
         body: [
-          "Fun fact: I've never lived here full-time, but the food, the festivals, and the dance moves are 100% mine.",
+          "I've never lived here full-time, but the food, the festivals, and the dance moves are 100% mine.",
           "Roots don't need a residency."
         ],
         video: { label: "Moments of my culture", type: "video", src: "media/india-roots.mp4" }
@@ -130,7 +130,7 @@ const STORY = {
       pillar: "Home Away From Home",
       title: "An hour up a road I could drive blind.",
       body: [
-        "Fun fact: this is where the Dabhol group story lives — two dads, one 1990s power plant project, and kids who never got a say in becoming close.",
+        "This is where the Dabhol group story lives — two dads, one 1990s power plant project, and kids who never got a say in becoming close.",
         "Home just spread a little further down the coast."
       ],
       video: { label: "Weekends in Dubai, the Dabhol group", type: "video", src: "media/dubai-video.mp4" }
@@ -179,7 +179,7 @@ const STORY = {
         pillar: "Academics",
         title: "I didn't come here to blend in.",
         body: [
-          "Fun fact: I'm studying CS + Linguistics — why pick between machines and people when you can study them talking past each other?",
+          "I'm studying CS + Linguistics — why pick between machines and people when you can study them talking past each other?",
           "Impossible to overlook was always the plan."
         ],
         video: { label: "UT Austin, CS life", type: "video", src: "media/utcs.mp4" }
@@ -190,7 +190,7 @@ const STORY = {
         pillar: "Service",
         title: "It followed me 8,000 miles.",
         body: [
-          "Fun fact: I teach robotics through Women in CS and the UTCS Roadshow — handing a kid their first kit never gets old.",
+          "I teach robotics through Women in CS and the UTCS Roadshow — handing a kid their first kit never gets old.",
           "That flicker of 'I could do this too' is the whole point."
         ],
         video: { label: "Teaching robotics in Austin", type: "image", src: "media/ut-volunteer.jpg" }
@@ -201,7 +201,7 @@ const STORY = {
         pillar: "Ambition",
         title: "Ambition, lived intentionally.",
         body: [
-          "Fun fact: I don't measure my life in job titles. I measure it in whether I made something a little better, on purpose.",
+          "I don't measure my life in job titles. I measure it in whether I made something a little better, on purpose.",
           "At thirty, I want to be memorable for what I built, not what I was called."
         ],
         video: { label: "What I'm building", type: "image", src: "media/ambition.jpg" }
@@ -212,7 +212,7 @@ const STORY = {
         pillar: "Friendship",
         title: "Found some. Still counting.",
         body: [
-          "Fun fact: I knew zero people when I landed in Austin.",
+          "I knew zero people when I landed in Austin.",
           "I'm scared of being perceived — and I walked into rooms alone anyway. Found some people. Not all of them yet. But some."
         ],
         video: { label: "New friends, first year", type: "video", src: "media/friends-ut.mp4" }
@@ -223,7 +223,7 @@ const STORY = {
         pillar: "Home — still looking",
         title: "Building a second home, on purpose.",
         body: [
-          "Fun fact: Austin isn't home yet — but I'm collecting the mornings and street corners that might make it one.",
+          "Austin isn't home yet — but I'm collecting the mornings and street corners that might make it one.",
           "Not there yet. Building it anyway."
         ],
         video: { label: "Austin, day to day", type: "video", src: "media/ut-home.mp4" }
