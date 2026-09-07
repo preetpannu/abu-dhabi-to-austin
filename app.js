@@ -361,9 +361,8 @@
     rowsEl.innerHTML = '';
     STORY.departuresBoard.forEach(r => {
       const row = document.createElement('div');
-      const statusClass = 'status-' + r.status.toLowerCase().replace(/\s+/g, '-');
       row.className = 'board-row' + (r.highlight ? ' highlight' : '');
-      row.innerHTML = `<span>${r.dest}</span><span>${r.flight}</span><span>${r.gate || '—'}</span><span class="board-status ${statusClass}">${r.status}</span>`;
+      row.innerHTML = `<span>${r.dest}</span><span>${r.flight}</span><span>${r.status}</span>`;
       rowsEl.appendChild(row);
     });
   }

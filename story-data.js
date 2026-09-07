@@ -159,11 +159,11 @@ const STORY = {
   ],
 
   departuresBoard: [
-    { dest: "LONDON", flight: "BA 108", gate: "A12", status: "DEPARTED" },
-    { dest: "MUMBAI", flight: "EY 234", gate: "B04", status: "DEPARTED" },
-    { dest: "SINGAPORE", flight: "SQ 493", gate: "C21", status: "BOARDING" },
-    { dest: "NEW YORK · AUSTIN", flight: "EY 101", gate: "D07", status: "FINAL CALL", highlight: true },
-    { dest: "PARIS", flight: "AF 655", gate: "A03", status: "ON TIME" }
+    { dest: "LONDON", flight: "BA 108", status: "DEPARTED" },
+    { dest: "MUMBAI", flight: "EY 234", status: "DEPARTED" },
+    { dest: "SINGAPORE", flight: "SQ 493", status: "BOARDING" },
+    { dest: "NEW YORK · AUSTIN", flight: "EY 101", status: "FINAL CALL", highlight: true },
+    { dest: "PARIS", flight: "AF 655", status: "ON TIME" }
   ],
 
   boardingPass: {
