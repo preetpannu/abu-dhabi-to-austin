@@ -63,11 +63,11 @@ const STORY = {
         id: "academics",
         lat: 24.4360, lng: 54.4520,
         pillar: "Academics",
-        title: "60 students, 4 AP exams, 1 Talent Day.",
+        title: "My high school life in a nut shell?",
         location: "Al Maryah Island, Abu Dhabi",
         body: [
-          "My high school life in a nut shell? I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
-          "Turns out debugging code and debugging a talent show use the exact same muscle."
+          "Imagine directing a Shakespeare's play while juggling four AP exams in 2 weeks - yeah I lived that all throughout high school ouch.",
+          "Turns out debugging code and debugging school use the exact same muscle."
         ],
         video: { label: "School, Talent Day, graduation", type: "video", src: "media/academics-auh.mp4" }
       },
@@ -75,11 +75,11 @@ const STORY = {
         id: "friendship",
         lat: 24.4103, lng: 54.5622,
         pillar: "Friendship",
-        title: "Some of my friends predate my memory.",
+        title: "They knew me before I knew myself.",
         location: "Al Reem Island, Abu Dhabi",
         body: [
-          "I've known some friends since before I can remember — every recital, every exam, every awkward phase, fully witnessed.",
-          "No new friendship replicates an inside joke with no origin story."
+          "I have given these people my ugliest crying, my worst decisions, my most humiliating years — and not one of them left.",
+          "Leaving them for Austin was the first heartbreak nobody warns you about. Not romantic. Just as real, just as loud."
         ],
         video: { label: "School friends, over the years", type: "video", src: "media/friends-huh.mp4" }
       },
@@ -87,11 +87,11 @@ const STORY = {
         id: "service",
         lat: 24.5150, lng: 54.4950,
         pillar: "Service",
-        title: "This pin flies further than Abu Dhabi.",
+        title: "this pin flies further than Abu Dhabi",
         location: "Al Bahia, Abu Dhabi",
         linksTo: "gurgaon",
         body: [
-          "My ambition has a passport. It doesn't stop at my own doorstep.",
+          "My ambition too has a passport. It never stopped at just my own doorstep.",
           "Follow this pin to where that lesson actually started."
         ],
         video: null,
@@ -109,7 +109,7 @@ const STORY = {
         lat: 28.4595, lng: 77.0266,
         pillar: "Service",
         title: "Paying attention, on purpose.",
-        location: "Sector 29, Gurgaon",
+        location: "Sector 7, Gurgaon",
         body: [
           "Volunteering here taught me the people I help are never abstract — they have names and mornings.",
           "That lesson now lives in every line of code I write."
