@@ -111,7 +111,7 @@ const STORY = {
         title: "Paying attention, on purpose.",
         location: "Sector 7, Gurgaon",
         body: [
-          "Volunteering here taught me the people I help are never abstract — they have names and mornings.",
+          "Interacting with these people here taught me that humans are never abstract — they have names, mornings and a whole lot of stories.",
           "That lesson now lives in every line of code I write."
         ],
         video: { label: "Volunteering in Gurgaon", type: "video", src: "media/india-volunteering.mp4" }
@@ -120,11 +120,11 @@ const STORY = {
         id: "roots",
         lat: 28.4400, lng: 77.0650,
         pillar: "Roots",
-        title: "The place I carry, not visit.",
+        title: "roots don't need a residency",
         location: "DLF Phase 3, Gurgaon",
         body: [
-          "I've never lived here full-time, but the food, the festivals, and the dance moves are 100% mine.",
-          "Roots don't need a residency."
+          "My last name, Pannu, is a Punjabi Jat surname older than any border I've crossed since.",
+          "I grew up switching between Hindi, Punjabi, and English mid-sentence — turns out roots don't do fractions, they just multiply."
         ],
         video: { label: "Moments of my culture", type: "video", src: "media/india-roots.mp4" }
       }
