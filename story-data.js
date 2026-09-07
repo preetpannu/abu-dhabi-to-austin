@@ -29,7 +29,7 @@ const STORY = {
         title: "home is a feeling, not a zip code.",
         location: "Corniche, Abu Dhabi",
         body: [
-          "My skin knows I'm home before my brain catches up; something about the humidity as I walk out the plane.",
+          "My body knows I'm home before my brain catches up; something about the humidity as I walk out the plane and drive to the island that's the only home I've ever known.",
           "It's the Corniche sunsets and a language that switches mid-sentence and never having to explain a word."
         ],
         video: { label: "A moment from the Corniche", type: "video", src: "media/auh-home-3.mp4" }
@@ -137,11 +137,11 @@ const STORY = {
       id: "dubai-continued",
       lat: 25.1972, lng: 55.2744,
       pillar: "Home Away From Home",
-      title: "An hour up a road I could drive blind.",
+      title: "an hour up the road I know like the back of my hand",
       location: "Dubai Marina, Dubai",
       body: [
-        "This is where the Dabhol group story lives — two dads, one 1990s power plant project, and kids who never got a say in becoming close.",
-        "Home just spread a little further down the coast."
+        "Home just spread a little further to the mainland.",
+        "This is where the Dabhol story lives — four guys in their 20s & a power plant project in India started a circle where the kids never got a say in becoming close."
       ],
       video: { label: "Weekends in Dubai, the Dabhol group", type: "video", src: "media/dubai-video.mp4" }
     }
@@ -187,11 +187,11 @@ const STORY = {
         id: "cs",
         lat: 30.2849, lng: -97.7341,
         pillar: "Academics",
-        title: "I didn't come here to blend in.",
+        title: "i didn't come here to blend in",
         location: "UT Austin Campus, Austin",
         body: [
-          "I'm studying CS + Linguistics — why pick between machines and people when you can study them talking past each other?",
-          "Impossible to overlook was always the plan."
+          "Being one of a handful of girls in a 300-person lecture hall stopped feeling like a flex and started feeling like data — so I decided to be the loudest name on every group project.",
+          "CS + Linguistics wasn't the safe combo. It was the one nobody could talk me out of."
         ],
         video: { label: "UT Austin, CS life", type: "video", src: "media/utcs.mp4" }
       },
@@ -199,11 +199,11 @@ const STORY = {
         id: "service-austin",
         lat: 30.3078, lng: -97.7433,
         pillar: "Service",
-        title: "It followed me 8,000 miles.",
-        location: "Gates Dell Complex, Austin",
+        title: "followed me 8,000 miles",
+        location: "Mount Bonnel, Austin",
         body: [
-          "I teach robotics through Women in CS and the UTCS Roadshow — handing a kid their first kit never gets old.",
-          "That flicker of 'I could do this too' is the whole point."
+          "Through Women in CS and the UTCS Roadshow, I've handed robotics kits to kids in towns smaller than my old apartment building back home.",
+          "One girl asked if I was 'actually a real engineer.' I said watch me — she built her robot first."
         ],
         video: { label: "Teaching robotics in Austin", type: "image", src: "media/ut-volunteer.jpg" }
       },
@@ -212,10 +212,10 @@ const STORY = {
         lat: 30.2711, lng: -97.7437,
         pillar: "Ambition",
         title: "Ambition, lived intentionally.",
-        location: "Downtown Austin, Austin",
+        location: "Black Sheep Coffee, Austin",
         body: [
-          "I don't measure my life in job titles. I measure it in whether I made something a little better, on purpose.",
-          "At thirty, I want to be memorable for what I built, not what I was called."
+          "I used to think ambition meant a five-year plan. Now it means saying yes to a city where I knew no one, because staying safe stopped being a personality trait I wanted.",
+          "I want a life people remember out loud, not one they scroll past."
         ],
         video: { label: "What I'm building", type: "image", src: "media/ambition.jpg" }
       },
