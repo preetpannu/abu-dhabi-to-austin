@@ -26,11 +26,11 @@ const STORY = {
         id: "home",
         lat: 24.4764, lng: 54.3352,
         pillar: "Home",
-        title: "Home is a feeling, not a zip code.",
-        location: "The Corniche, Abu Dhabi",
+        title: "home is a feeling, not a zip code.",
+        location: "Corniche, Abu Dhabi",
         body: [
-          "My feet know I'm home before my brain catches up — usually somewhere around the humidity on the airport walkway.",
-          "Home is Corniche sunsets, a language that switches mid-sentence at dinner, and never having to explain myself."
+          "My skin knows I'm home before my brain catches up; something about the humidity as I walk out the plane.",
+          "It's the Corniche sunsets and a language that switches mid-sentence and never having to explain a word."
         ],
         video: { label: "A moment from the Corniche", type: "video", src: "media/auh-home-3.mp4" }
       },
@@ -38,11 +38,11 @@ const STORY = {
         id: "passion",
         lat: 24.4696, lng: 54.3900,
         pillar: "Passion",
-        title: "9 years of Bharatanatyam. Zero regrets.",
+        title: "nine years of bharatanatyam and a lifetime worth of lessons",
         location: "Al Zahiyah, Abu Dhabi",
         body: [
-          "I've performed a full Arangetram — hours of dance memorized down to the eyebrow flick.",
-          "Dance taught me discipline before school did: show up, repeat it a hundred times, make it look effortless."
+          "Dance taught me discipline before school did; to show up, repeat it a hundred times and make it look effortless just became the way I lived life.",
+          "PS: I've performed a full Arangetram so hours of dance memorized down to the eyebrow flick!",
         ],
         video: { label: "Arangetram, and the years of dance before it", type: "video", src: "media/dance-2.mp4" }
       },
@@ -50,11 +50,12 @@ const STORY = {
         id: "character",
         lat: 24.4915, lng: 54.3703,
         pillar: "Character",
-        title: "My motto: live intentionally.",
+        title: "what's a life not lived intentionally?",
         location: "Al Khalidiyah, Abu Dhabi",
         body: [
           "I have strong opinions and zero interest in hiding them just to fit in.",
-          "Nine years of dance plus one very stubborn family equals someone who picks purpose over popularity, every time."
+          "Nine years of dance plus one very stubborn family equals someone who picks purpose over popularity, every time.",
+          "Moving across the world alone was the clearest proof: I don't wait for permission to want more."
         ],
         video: { label: "Growing up in Abu Dhabi", type: "image", src: "media/character.jpg" }
       },
@@ -65,7 +66,7 @@ const STORY = {
         title: "60 students, 4 AP exams, 1 Talent Day.",
         location: "Al Maryah Island, Abu Dhabi",
         body: [
-          "I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
+          "My high school life in a nut shell? I ran Talent Day for ~60 students while juggling four AP exams — same semester I fell for computer science.",
           "Turns out debugging code and debugging a talent show use the exact same muscle."
         ],
         video: { label: "School, Talent Day, graduation", type: "video", src: "media/academics-auh.mp4" }
