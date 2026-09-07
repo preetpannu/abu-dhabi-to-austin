@@ -270,10 +270,8 @@
       <div class="eyebrow">Abu Dhabi</div>
       <h1 class="headline">For most of my life, this was <em style="font-style:italic; color:var(--gold-bright);">my entire world.</em></h1>
       <div class="stack">
-        <p>I was born and raised here. Every pin below is an answer to something I believe in.</p>
+        <p>I was born and raised here. Every street here is a different kind of silence; the silence I hear when I look back at my life, exactly what you will hear as you explore my memory card.</p>
       </div>
-      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
-      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pins to visit my pillars</div>
       <button class="continue-btn" id="to-dubai-btn">Continue the journey → Dubai
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -288,9 +286,8 @@
       <h1 class="headline" style="font-size:clamp(1.4rem,2.6vw,2.1rem);">Not everything that shaped me happened at home.</h1>
       <div class="stack">
         <p>Two pins here: the volunteering that changed how I think about building things, and the roots I still carry no matter how far I go.</p>
+        <p>Every place here carries a different kind of silence — the silence I hear when I look back at my life, exactly what you will hear as you explore my memory card.</p>
       </div>
-      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
-      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pins to visit my pillars</div>
       <button class="continue-btn secondary" id="fly-home-btn">‹ Fly back to Abu Dhabi
       </button>
@@ -304,9 +301,8 @@
       <h1 class="headline" style="font-size:clamp(1.4rem,2.6vw,2.1rem);">Home doesn't always stay in one city.</h1>
       <div class="stack">
         <p>This pin continues the Home and Friendship pillars from Abu Dhabi — including the Dabhol group story — just a little further up the coast.</p>
+        <p>Every place here carries a different kind of silence — the silence I hear when I look back at my life, exactly what you will hear as you explore my memory card.</p>
       </div>
-      <p class="panel-quote">The silence is what I feel when I look at my life. That's what my life is.</p>
-      <p class="panel-quote">My memory card may get full. I hope my memories never do.</p>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pin to visit my pillars</div>
       <button class="continue-btn" id="to-departures-btn">Continue the journey → Departures
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
