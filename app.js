@@ -109,7 +109,7 @@
       isPostcard = true;
       const mediaHTML = pin.video.type === 'image'
         ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
-        : `<video class="vs-media" src="${pin.video.src}" controls playsinline autoplay preload="auto"></video>`;
+        : `<video class="vs-media" src="${pin.video.src}" playsinline autoplay loop preload="auto"></video>`;
       innerHTML = `
         <div class="postcard-grid">
           <div class="postcard-media">
