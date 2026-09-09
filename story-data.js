@@ -63,7 +63,7 @@ const STORY = {
         id: "academics",
         lat: 24.4360, lng: 54.4520,
         pillar: "Academics",
-        title: "My high school life in a nut shell?",
+        title: "my high school life in a nut shell?",
         location: "Al Maryah Island, Abu Dhabi",
         body: [
           "Imagine directing a Shakespeare's play while juggling four AP exams in 2 weeks - yeah I lived that all throughout high school ouch.",
@@ -75,11 +75,11 @@ const STORY = {
         id: "friendship",
         lat: 24.4103, lng: 54.5622,
         pillar: "Friendship",
-        title: "They knew me before I knew myself.",
+        title: "they knew me before I knew myself",
         location: "Al Reem Island, Abu Dhabi",
         body: [
-          "I have given these people my ugliest crying, my worst decisions, my most humiliating years — and not one of them left.",
-          "Leaving them for Austin was the first heartbreak nobody warns you about. Not romantic. Just as real, just as loud."
+          "I have given these people my ugliest crying, my worst decisions, my most humiliating years and gotten over it when some left.",
+          "Still, leaving all of them for Austin was the first heartbreak nobody warns you about. Screw a breakup; this was the loudest heartbreak."
         ],
         video: { label: "School friends, over the years", type: "video", src: "media/friends-huh.mp4" }
       },

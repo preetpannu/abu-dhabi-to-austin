@@ -110,10 +110,12 @@
       const mediaHTML = pin.video.type === 'image'
         ? `<img class="vs-media" src="${pin.video.src}" alt="${pin.video.label}">`
         : `<video class="vs-media" src="${pin.video.src}" playsinline autoplay loop preload="auto"></video>`;
+      const isVideo = pin.video.type !== 'image';
       innerHTML = `
         <div class="postcard-grid">
-          <div class="postcard-media">
+          <div class="postcard-media${isVideo ? ' is-video' : ''}">
             ${mediaHTML}
+            ${isVideo ? `<div class="play-toggle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>` : ''}
             ${pin.location ? `<div class="postcard-location">${pinIconSVGSmall()}<span>${pin.location}</span></div>` : ''}
           </div>
           <div class="postcard-text">
@@ -160,6 +162,18 @@
         modalVideo.muted = true;
         modalVideo.play().catch(() => {});
       });
+      const mediaWrap = modalCard.querySelector('.postcard-media.is-video');
+      if(mediaWrap){
+        mediaWrap.addEventListener('click', () => {
+          if(modalVideo.paused){
+            modalVideo.play();
+            mediaWrap.classList.remove('paused');
+          } else {
+            modalVideo.pause();
+            mediaWrap.classList.add('paused');
+          }
+        });
+      }
     }
 
     document.getElementById('modal-close-btn').addEventListener('click', closeModal);

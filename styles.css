@@ -91,6 +91,7 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 
 .continue-btn{margin-top:2.4rem; display:inline-flex; align-items:center; gap:.6rem; background:none; border:1px solid rgba(243,236,221,.3); color:var(--cream); padding:.8rem 1.5rem; border-radius:100px; font-size:.82rem; letter-spacing:.06em; transition:border-color .3s ease, background .3s ease, transform .3s ease;}
 .continue-btn:hover{border-color:var(--gold-bright); background:rgba(211,163,90,.1); transform:translateX(4px);}
+.continue-btn:active{transform:translateX(4px) scale(.96);}
 .continue-btn svg{width:14px; height:14px;}
 .continue-btn.secondary{border-color:rgba(211,163,90,.35); color:var(--gold-bright);}
 
@@ -108,6 +109,7 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 }
 @keyframes pinRipple{0%{transform:scale(.5); opacity:.8;}100%{transform:scale(3); opacity:0;}}
 .map-pin:hover{transform:scale(1.15);}
+.map-pin:active{transform:scale(.95);}
 .map-pin svg{filter:drop-shadow(0 3px 8px rgba(0,0,0,.5)); animation:pinDrop .55s cubic-bezier(.34,1.56,.64,1) both;}
 .map-pin.pulse svg .pin-core{animation:pinpulse 2s ease-in-out infinite;}
 @keyframes pinpulse{0%,100%{opacity:1;}50%{opacity:.35;}}
@@ -162,7 +164,12 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 .modal-card h3{font-size:clamp(1.3rem, 2.2vw, 1.65rem); margin-bottom:1rem; line-height:1.25; max-width:none;}
 .modal-body-grid{display:grid; grid-template-columns:1.15fr 1fr; gap:2rem; align-items:start;}
 .modal-body-grid.single-col{grid-template-columns:1fr; max-width:60ch;}
-.modal-text p{font-size:.96rem; color:#dcd4c4; margin-top:.8rem; line-height:1.6;}
+.modal-text p{
+  font-size:.96rem; color:#dcd4c4; margin-top:.8rem;
+  line-height:1.75em; padding-bottom:.3em;
+  background-image:linear-gradient(transparent calc(1.75em - 1px), rgba(211,163,90,.22) calc(1.75em - 1px));
+  background-size:100% 1.75em; background-repeat:repeat-y;
+}
 .modal-text p:first-child{margin-top:0;}
 .video-slot{
   border:1.5px dashed rgba(211,163,90,.55); border-radius:10px;
@@ -178,12 +185,22 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 .video-slot .vs-media{width:100%; height:100%; object-fit:cover; border-radius:8px; display:block;}
 
 /* ---------- postcard modal ---------- */
-.postcard-grid{display:grid; grid-template-columns:1.15fr 1fr; min-height:320px;}
-.postcard-media{position:relative; background:#000; overflow:hidden; display:flex; align-items:center; justify-content:center;}
-.postcard-media .vs-media{width:100%; height:100%; object-fit:contain; display:block;}
+.postcard-grid{display:grid; grid-template-columns:.85fr 1fr; min-height:320px;}
+.postcard-media{position:relative; background:#000; overflow:hidden; display:flex; align-items:center; justify-content:center; cursor:pointer;}
+.postcard-media .vs-media{width:100%; height:100%; object-fit:cover; display:block;}
 .postcard-text{animation:fadeSlideUp .6s var(--ease) .15s both;}
 .postcard-media{animation:fadeIn .5s ease both;}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.postcard-media::after{
+  content:''; position:absolute; inset:0; background:rgba(211,163,90,0); transition:background .25s ease; pointer-events:none;
+}
+.postcard-media:hover::after{background:rgba(211,163,90,.08);}
+.postcard-media .play-toggle{
+  position:absolute; inset:0; z-index:3; display:flex; align-items:center; justify-content:center;
+  opacity:0; transition:opacity .2s ease; pointer-events:none;
+}
+.postcard-media .play-toggle svg{width:44px; height:44px; color:#fff; filter:drop-shadow(0 2px 10px rgba(0,0,0,.6));}
+.postcard-media.paused .play-toggle{opacity:1;}
 .postcard-location{
   position:absolute; left:1rem; bottom:1rem; z-index:2;
   display:flex; align-items:center; gap:.35rem;
@@ -193,11 +210,6 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 .postcard-location svg{width:15px; height:15px; flex-shrink:0; filter:drop-shadow(0 1px 4px rgba(0,0,0,.9));}
 .postcard-text{padding:2.2rem 2.2rem; display:flex; flex-direction:column; justify-content:center;}
 .postcard-text .modal-text{margin-top:0;}
-.postcard-text .modal-text p{
-  line-height:1.75em; padding-bottom:.3em;
-  background-image:linear-gradient(transparent calc(1.75em - 1px), rgba(211,163,90,.22) calc(1.75em - 1px));
-  background-size:100% 1.75em; background-repeat:repeat-y;
-}
 
 @media (max-width: 720px){
   .postcard-grid{grid-template-columns:1fr;}
@@ -211,6 +223,7 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
   transition:background .3s ease, transform .3s ease;
 }
 .modal-cta:hover{background:var(--gold-bright); transform:translateX(3px);}
+.modal-cta:active{transform:translateX(3px) scale(.96);}
 
 @media (max-width: 720px){
   .modal-body-grid{grid-template-columns:1fr;}
@@ -226,7 +239,8 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 .departure-line{font-family:var(--serif); font-style:italic; font-size:clamp(1rem, 1.3vw, 1.15rem); color:var(--gold-bright); max-width:48ch; margin-top:1.4rem; line-height:1.65; opacity:.92;}
 .board-wrap{margin-top:2rem; border:1px solid rgba(211,163,90,.35); border-radius:8px; background:#05070d; padding:1.5rem 1.7rem; max-width:560px; box-shadow:0 30px 80px -30px rgba(0,0,0,.6);}
 .board-title{font-size:.68rem; letter-spacing:.2em; color:var(--gold); margin-bottom:1rem;}
-.board-row{display:grid; grid-template-columns:1.3fr 1fr .8fr; gap:1rem; font-family:'Courier New', monospace; font-size:.88rem; color:#d7cdb3; padding:.5rem 0; border-bottom:1px solid rgba(211,163,90,.12); letter-spacing:.03em; animation:fadeSlideUp .5s ease both;}
+.board-row{display:grid; grid-template-columns:1.3fr 1fr .8fr; gap:1rem; font-family:'Courier New', monospace; font-size:.88rem; color:#d7cdb3; padding:.5rem 0; border-bottom:1px solid rgba(211,163,90,.12); letter-spacing:.03em; animation:fadeSlideUp .5s ease both; transition:background .2s ease, padding-left .2s ease;}
+.board-row:hover{background:rgba(211,163,90,.06); padding-left:.4rem;}
 .board-row.highlight{color:var(--gold-bright); font-weight:600;}
 .board-row:nth-child(1){animation-delay:.05s;}
 .board-row:nth-child(2){animation-delay:.15s;}
