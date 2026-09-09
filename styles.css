@@ -150,7 +150,7 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
   transform:translateY(16px) scale(.98); transition:transform .4s var(--ease);
   box-shadow:0 40px 100px -20px rgba(0,0,0,.7);
 }
-.modal-card.is-postcard{padding:0;}
+.modal-card.is-postcard{padding:0; width:min(1040px, 95vw);}
 #pillar-modal.open .modal-card{transform:translateY(0) scale(1);}
 .modal-card::-webkit-scrollbar{width:6px;}
 .modal-card::-webkit-scrollbar-thumb{background:rgba(211,163,90,.3); border-radius:3px;}
@@ -178,9 +178,9 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
 .video-slot .vs-media{width:100%; height:100%; object-fit:cover; border-radius:8px; display:block;}
 
 /* ---------- postcard modal ---------- */
-.postcard-grid{display:grid; grid-template-columns:1fr 1fr; min-height:480px;}
-.postcard-media{position:relative; background:#000; overflow:hidden;}
-.postcard-media .vs-media{width:100%; height:100%; object-fit:cover; display:block;}
+.postcard-grid{display:grid; grid-template-columns:1.3fr 1fr; min-height:320px;}
+.postcard-media{position:relative; background:#000; overflow:hidden; display:flex; align-items:center; justify-content:center;}
+.postcard-media .vs-media{width:100%; height:100%; object-fit:contain; display:block;}
 .postcard-text{animation:fadeSlideUp .6s var(--ease) .15s both;}
 .postcard-media{animation:fadeIn .5s ease both;}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
@@ -191,8 +191,10 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:400; letter-spacing:-0.01em;}
   text-shadow:0 1px 6px rgba(0,0,0,.9), 0 0 18px rgba(0,0,0,.6);
 }
 .postcard-location svg{width:15px; height:15px; flex-shrink:0; filter:drop-shadow(0 1px 4px rgba(0,0,0,.9));}
-.postcard-text{padding:2.4rem 2.4rem; display:flex; flex-direction:column; justify-content:center;}
+.postcard-text{padding:2.2rem 2.2rem; display:flex; flex-direction:column; justify-content:center;}
 .postcard-text .modal-text{margin-top:0;}
+.postcard-text h3{border-bottom:1px solid rgba(211,163,90,.3); padding-bottom:.8rem;}
+.postcard-text .modal-text p{border-bottom:1px solid rgba(211,163,90,.18); padding-bottom:.8rem;}
 
 @media (max-width: 720px){
   .postcard-grid{grid-template-columns:1fr;}
