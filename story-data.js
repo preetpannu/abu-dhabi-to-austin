@@ -211,11 +211,11 @@ const STORY = {
         id: "ambition",
         lat: 30.2711, lng: -97.7437,
         pillar: "Ambition",
-        title: "Ambition, lived intentionally.",
+        title: "I live for the experience, not the result.",
         location: "Black Sheep Coffee, Austin",
         body: [
-          "I used to think ambition meant a five-year plan. Now it means saying yes to a city where I knew no one, because staying safe stopped being a personality trait I wanted.",
-          "I want a life people remember out loud, not one they scroll past."
+          "I work hard toward my goals, but what I remember is rarely the outcome — it's the people, the conversations, the spontaneous yeses.",
+          "I moved to Texas knowing almost no one, chasing a life bigger than the one I'd always known — one I'd actually be there for."
         ],
         video: { label: "What I'm building", type: "image", src: "media/ambition.jpg" }
       },
