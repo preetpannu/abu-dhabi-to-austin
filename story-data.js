@@ -191,7 +191,7 @@ const STORY = {
         location: "UT Austin Campus, Austin",
         body: [
           "Being one of a handful of girls in a 300 person lecture hall stopped feeling like a flex and started feeling like data.",
-          "CS wasn't the safest bet but it was one nobody could talk me out of. So here's to me and the other 5 girls in every class."
+          "CS wasn't the safest bet but it was one nobody could talk me out of. So I try to be the loudest in every CS class, taking one for me and the other 5 girls."
         ],
         video: { label: "UT Austin, CS life", type: "video", src: "media/utcs.mp4" }
       },
