@@ -314,8 +314,7 @@
       <div class="eyebrow">An Hour Up The Road</div>
       <h1 class="headline" style="font-size:clamp(1.4rem,2.6vw,2.1rem);">Home doesn't always stay in one city.</h1>
       <div class="stack">
-        <p>This pin continues the Home and Friendship pillars from Abu Dhabi — including the Dabhol group story — just a little further up the coast.</p>
-        <p>Every place here carries a different kind of silence — the silence I hear when I look back at my life, exactly what you will hear as you explore my memory card.</p>
+        <p>I never lived here, but it still feels like home. Home isn't just where you had a house — it's where you had your people, the ones who made it feel like home.</p>
       </div>
       <div class="hint-tap"><span class="dot-demo"></span> Tap the gold pin to visit my pillars</div>
       <button class="continue-btn" id="to-departures-btn">Continue the journey → Departures
