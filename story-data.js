@@ -234,12 +234,13 @@ const STORY = {
       {
         id: "home-austin",
         lat: 30.2650, lng: -97.7420,
-        pillar: "Home — still looking",
+        pillar: "Home",
         title: "building a second home, on purpose",
         location: "South Congress, Austin",
         body: [
           "Austin isn't home yet — but I'm collecting the mornings and street corners that might make it one.",
-          "Not there yet; building it anyway."
+          "Not there yet; building it anyway.",
+          "(the turtle in the turtle pond video is lowkey me)"
         ],
         video: { label: "Austin, day to day", type: "video", src: "media/ut-home.mp4" }
       }
