@@ -108,10 +108,10 @@ const STORY = {
         id: "volunteering",
         lat: 28.4595, lng: 77.0266,
         pillar: "Service",
-        title: "Paying attention, on purpose.",
+        title: "paying attention",
         location: "Sector 7, Gurgaon",
         body: [
-          "Interacting with these people here taught me that humans are never abstract — they have names, mornings and a whole lot of stories.",
+          "Interacting with these people here taught me that humans are never abstract — they have names, mornings and a whole life of stories.",
           "That lesson now lives in every line of code I write."
         ],
         video: { label: "Volunteering in Gurgaon", type: "video", src: "media/india-volunteering.mp4" }
@@ -123,8 +123,8 @@ const STORY = {
         title: "roots don't need a residency",
         location: "DLF Phase 3, Gurgaon",
         body: [
-          "My last name, Pannu, is a Punjabi Jat surname older than any border I've crossed since.",
-          "I grew up switching between Hindi, Punjabi, and English mid-sentence — turns out roots don't do fractions, they just multiply."
+          "My last name, Pannu, is a Punjabi surname older than any border I have ever crossed.",
+          "I grew up switching between Hindi, Punjabi and English mid-sentence because turns out roots don't do fractions, they simply multiply."
         ],
         video: { label: "Moments of my culture", type: "video", src: "media/india-roots.mp4" }
       }
@@ -190,8 +190,8 @@ const STORY = {
         title: "i didn't come here to blend in",
         location: "UT Austin Campus, Austin",
         body: [
-          "Being one of a handful of girls in a 300-person lecture hall stopped feeling like a flex and started feeling like data — so I decided to be the loudest name on every group project.",
-          "CS + Linguistics wasn't the safe combo. It was the one nobody could talk me out of."
+          "Being one of a handful of girls in a 300 person lecture hall stopped feeling like a flex and started feeling like data.",
+          "CS wasn't the safest bet but it was one nobody could talk me out of. So here's to me and the other 5 girls in every class."
         ],
         video: { label: "UT Austin, CS life", type: "video", src: "media/utcs.mp4" }
       },
@@ -202,8 +202,8 @@ const STORY = {
         title: "followed me 8,000 miles",
         location: "Mount Bonnel, Austin",
         body: [
-          "Through Women in CS and the UTCS Roadshow, I've handed robotics kits to kids in towns smaller than my old apartment building back home.",
-          "One girl asked if I was 'actually a real engineer.' I said watch me — she built her robot first."
+          "I've handed robotics kits to kids in towns smaller than my old apartment building back home.",
+          "A girl asked if I was 'actually a real engineer' so I said watch me but she built her robot first (yes, it was super embaraasing)."
         ],
         video: { label: "Teaching robotics in Austin", type: "image", src: "media/ut-volunteer.jpg" }
       },
@@ -211,11 +211,11 @@ const STORY = {
         id: "ambition",
         lat: 30.2711, lng: -97.7437,
         pillar: "Ambition",
-        title: "I live for the experience, not the result.",
+        title: "live for the experience, not the result",
         location: "Black Sheep Coffee, Austin",
         body: [
-          "I work hard toward my goals, but what I remember is rarely the outcome — it's the people, the conversations, the spontaneous yeses.",
-          "I moved to Texas knowing almost no one, chasing a life bigger than the one I'd always known — one I'd actually be there for."
+          "Nothing can come between me and my goals and what I remember is rarely the outcome — it's the people, the conversations & the spontaneous yeses.",
+          "I moved knowing almost no one, chasing a life bigger than the one I'd always known — one I'd actually be there for."
         ],
         video: { label: "What I'm building", type: "image", src: "media/ambition.jpg" }
       },
@@ -223,11 +223,11 @@ const STORY = {
         id: "friendship-austin",
         lat: 30.2586, lng: -97.7387,
         pillar: "Friendship",
-        title: "Found some. Still counting.",
+        title: "found some, still counting",
         location: "West Campus, Austin",
         body: [
-          "I knew zero people when I landed in Austin.",
-          "I'm scared of being perceived — and I walked into rooms alone anyway. Found some people. Not all of them yet. But some."
+          "I know I'm still far from having found my people.",
+          "But I'm scared of being alone so all in all, you know I was forced to find some anyways; and I'm glad I did."
         ],
         video: { label: "New friends, first year", type: "video", src: "media/friends-ut.mp4" }
       },
@@ -235,11 +235,11 @@ const STORY = {
         id: "home-austin",
         lat: 30.2650, lng: -97.7420,
         pillar: "Home — still looking",
-        title: "Building a second home, on purpose.",
+        title: "building a second home, on purpose",
         location: "South Congress, Austin",
         body: [
           "Austin isn't home yet — but I'm collecting the mornings and street corners that might make it one.",
-          "Not there yet. Building it anyway."
+          "Not there yet; building it anyway."
         ],
         video: { label: "Austin, day to day", type: "video", src: "media/ut-home.mp4" }
       }
