@@ -451,7 +451,6 @@
 
   function checkAustinComplete(){
     if(austinVisited.size >= STORY.austin.pins.length){
-      document.getElementById('austin-closing').style.display = 'block';
       document.getElementById('austin-continue-btn').style.display = 'inline-flex';
       document.getElementById('austin-end-btn').style.display = 'none';
     }
